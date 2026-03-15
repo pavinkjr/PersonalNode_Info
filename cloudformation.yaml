@@ -14,7 +14,7 @@ Parameters:
   CertificateArn:
     Type: String
     Description: ACM certificate ARN (must be in us-east-1)
-    Default: arn:aws:acm:us-east-1:937932185277:certificate/8c1ec0c6-c8c3-44be-bfff-a88ebbbcdaab
+    Default: arn:aws:acm:us-east-1:937932185277:certificate/c622fed4-16a7-4c66-a307-05b48568dc3b
   HostedZoneId:
     Type: AWS::Route53::HostedZone::Id
     Description: Existing Route 53 hosted zone ID for the domain
