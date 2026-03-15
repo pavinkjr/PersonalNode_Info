@@ -1,8 +1,11 @@
 function SpecPage() {
   return (
     <div className="spec-page">
-      <h1>PersonalNode Protocol</h1>
-      <p className="spec-meta">Specification v0.3 (Draft) &mdash; A federated, user-owned social data protocol</p>
+      <div className="spec-header">
+        <h1>PersonalNode Protocol</h1>
+        <span className="spec-version-badge">v0.3 Draft</span>
+      </div>
+      <p className="spec-meta">A federated, user-owned social data protocol</p>
 
       {/* 1. Overview */}
       <h2>1. Overview</h2>

@@ -8,7 +8,6 @@ function HomePage() {
         <SwirlyBackground />
 
         <section className="hero">
-          <span className="version-badge">v0.3 Draft</span>
           <h1>PersonalNode Protocol</h1>
           <p className="subtitle">
             A federated, user-owned social data protocol. Own your data, control
@@ -19,6 +18,45 @@ function HomePage() {
           </Link>
         </section>
 
+        <section className="vision-section">
+          <h2>The Vision</h2>
+          <p className="vision-lead">
+            We live in a data-first world. Your personal information is one of
+            the most valuable commodities that exists — and the companies that
+            hold it have no incentive to give you full control back.
+          </p>
+          <div className="vision-points">
+            <div className="vision-point">
+              <h3>Your Data, Your Node</h3>
+              <p>
+                PersonalNode gives you a single place to store all your personal
+                data online. It's encrypted on the server so that not even the
+                host can read it. Only you hold the keys.
+              </p>
+            </div>
+            <div className="vision-point">
+              <h3>Share With People, Not Platforms</h3>
+              <p>
+                When you share information, it goes directly to the individuals
+                who need it — not to a corporation's database. Applications
+                built on this protocol coordinate communication between users
+                without ever needing the data themselves.
+              </p>
+            </div>
+            <div className="vision-point">
+              <h3>Eliminate the Honeypot</h3>
+              <p>
+                Today, a single breach can expose millions of users at once.
+                With PersonalNode, there is no central vault to attack. Each
+                user's data lives on their own node, encrypted at rest —
+                dramatically reducing the blast radius of any compromise.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div className="section-band section-principles">
         <section className="section">
           <h2>Design Principles</h2>
           <div className="principles-grid">
@@ -50,8 +88,9 @@ function HomePage() {
         </section>
       </div>
 
-      <section className="section">
-        <h2>Core Concepts</h2>
+      <div className="section-band section-concepts">
+        <section className="section">
+          <h2>Core Concepts</h2>
         <div className="concepts-list">
           <div className="concept-item">
             <div className="concept-icon">&#x1F5A5;</div>
@@ -89,10 +128,12 @@ function HomePage() {
             </div>
           </div>
         </div>
-      </section>
+        </section>
+      </div>
 
-      <section className="section">
-        <h2>How Federation Works</h2>
+      <div className="section-band section-federation">
+        <section className="section">
+          <h2>How Federation Works</h2>
         <div className="flow-steps">
           <div className="flow-step">
             <span className="step-number">1</span>
@@ -125,7 +166,8 @@ function HomePage() {
             <p>Your node returns the encrypted resource. Your client decrypts it locally using your private key. The server never sees plaintext.</p>
           </div>
         </div>
-      </section>
+        </section>
+      </div>
 
       <section className="cta-banner">
         <h2>Read the Full Specification</h2>
